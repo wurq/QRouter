@@ -5,11 +5,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.os.Handler;
 
+import com.arch.componentrouter.ui.UIRouter;
+
 
 /**
  * Created by wurongqiu on 2017/4/26.
  * <p>
- * Editor by wangjianbiao on 2017/08/16
  */
 
 public class QRouterApplication extends Application {
@@ -29,6 +30,8 @@ public class QRouterApplication extends Application {
         Context context = getApplicationContext();
         AppProfile.setContext(context);
 //        AppProfile.setStartTime(System.currentTimeMillis() + DataConst.RuntimeStatus.CURRENT_TIME);
+
+        UIRouter.getInstance().registerUI("app");
 
     }
 

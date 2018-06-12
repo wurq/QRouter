@@ -1,12 +1,12 @@
 package com.arch.utils;
 
 /**
- * Created by mrzhang on 2017/12/18.
+ * Created by wurongqiu on 2017/12/18.
  */
 
 public class RouteUtils {
 
-    private static final String ROUTERIMPL_OUTPUT_PKG = "com.luojilab.gen.router";
+    private static final String ROUTERIMPL_OUTPUT_PKG = "com.arch.router";
     private static final String DOT = ".";
     private static final String UIROUTER = "UiRouter";
 
@@ -21,10 +21,14 @@ public class RouteUtils {
     }
 
     public static String genHostUIRouterClass(String host) {
-        String claName = ROUTERIMPL_OUTPUT_PKG + DOT + firstCharUpperCase(host) + UIROUTER;
+        String claName = ROUTERIMPL_OUTPUT_PKG + DOT + host;//firstCharUpperCase(host) + UIROUTER;
         return new String(claName);
     }
 
+    public static String gentUIRouterClass(String host) {
+        String claName = ROUTERIMPL_OUTPUT_PKG + DOT + firstCharUpperCase(host) + UIROUTER;
+        return new String(claName);
+    }
 
     public static String genRouterTable(String host) {
         String claName = "./UIRouterTable/" + firstCharUpperCase(host) + ROUTERTABLE + ".txt";

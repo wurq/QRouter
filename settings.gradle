@@ -1,1 +1,3 @@
-include ':app', ':componentrouter'
+include ':app', ':moduleb',
+        ':componentrouter',
+        ':modulea'
