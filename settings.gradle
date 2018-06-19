@@ -1,3 +1,5 @@
-include ':app', ':moduleb',
+include ':app',
+        ':moduleb',
+        ':gradplugin',
         ':componentrouter',
         ':modulea'
