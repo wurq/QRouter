@@ -1,5 +1,6 @@
-include ':app',
+include ':app', ':anno-compiler',
         ':moduleb',
         ':gradplugin',
         ':componentrouter',
-        ':modulea'
+        ':modulea',
+        ':router-anno'

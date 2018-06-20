@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.arch.basemodule.activity.BaseActivity;
+import com.arch.node.RouterNode;
 import com.arch.qrouter.R;
 import com.arch.qrouter.mainpage.presenter.MainPresenter;
 
+@RouterNode(path = "/mainPage",desc = "进入App主页")
 public class MainActivity extends BaseActivity<MainPresenter> {
 
     @Override
