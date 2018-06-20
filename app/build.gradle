@@ -29,6 +29,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     compile project(path: ':componentrouter')
     compile project(path: ':modulea')
-    annotationProcessor project(':anno-compiler')
+    annotationProcessor project(':annocompiler')
     compile project(path: ':router-anno')
 }

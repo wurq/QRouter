@@ -1,11 +1,9 @@
 package com.arch.basemodule.activity;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.annotation.ColorInt;
 import android.support.annotation.LayoutRes;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -57,10 +55,10 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
 //        return R.color.common_main_color;
 //    }
 
-    @ColorInt
-    protected int onInitStatusBarColor() {
-        return 0;
-    }
+//    @ColorInt
+//    protected int onInitStatusBarColor() {
+//        return 0;
+//    }
 
     /**
      * Inflate a content view for the activity.
@@ -86,18 +84,18 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         super.onDetachedFromWindow();
     }
 
-    @TargetApi(19)
-    public void setTranslucentStatus(boolean on) {
-        Window win = getWindow();
-        WindowManager.LayoutParams winParams = win.getAttributes();
-        final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
-        if (on) {
-            winParams.flags |= bits;
-        } else {
-            winParams.flags &= ~bits;
-        }
-        win.setAttributes(winParams);
-    }
+//    @TargetApi(19)
+//    public void setTranslucentStatus(boolean on) {
+//        Window win = getWindow();
+//        WindowManager.LayoutParams winParams = win.getAttributes();
+//        final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+//        if (on) {
+//            winParams.flags |= bits;
+//        } else {
+//            winParams.flags &= ~bits;
+//        }
+//        win.setAttributes(winParams);
+//    }
 
     protected void disableScreenCapture() {
         Window window = getWindow();
