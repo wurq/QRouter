@@ -18,6 +18,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
 dependencies {
@@ -31,4 +36,6 @@ dependencies {
     compile project(path: ':modulea')
     annotationProcessor project(':annocompiler')
     compile project(path: ':router-anno')
+
+    implementation "com.airbnb.android:lottie:2.6.0"
 }
